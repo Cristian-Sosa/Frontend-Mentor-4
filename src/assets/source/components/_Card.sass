@@ -1,0 +1,46 @@
+div.card
+    min-width: 320px
+    max-width: 350px
+
+    margin: 32px 16px
+
+    background-color: $veryLightGray
+
+    border-radius: 8px
+
+    overflow: hidden
+
+    box-shadow: 0 24px 24px -24px lighten($grayishBlue, 10)
+
+
+.card_container
+    width: 100%
+    height: 100%
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+    padding: 16px 24px 32px
+
+    .card_title
+        margin-bottom: 8px
+
+        font-size: 24px
+        font-weight: $weightBold
+
+        color: $veryDarkBlue
+
+    .card_description
+        margin-bottom: 24px
+
+        font-size: 14px
+        font-weight: $weightLight
+
+        color: lighten($veryDarkBlue, 20)
+
+    .card_icon
+        width: 64px
+
+        align-self: flex-end
