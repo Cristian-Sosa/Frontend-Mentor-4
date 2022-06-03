@@ -2,8 +2,9 @@
 @import '../tokens/_variables'
 
 // Components
-@import '../components/_Card'
+@import '../components/_Card', '../components/_Header'
 
+// Patterns
 @import '../patterns/_main'
 
 *
@@ -12,11 +13,16 @@
   box-sizing: border-box
 
 body
-  font-family: $font-primary
+  padding: 50px 0 80px
+
   background-color: lighten($grayishBlue, 28)
+  
+  font-family: $font-primary
 
 #root
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
+
+@import '../tokens/_querys'
